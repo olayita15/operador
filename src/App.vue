@@ -273,35 +273,23 @@ onBeforeUnmount(() => {
       </section>
 
       <section id="contacto" class="px-6 pb-24 pt-20 lg:px-8">
-        <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div class="reveal-on-scroll rounded-[2rem] bg-brand-deep p-8 text-white shadow-soft">
-            <p class="text-sm font-bold uppercase tracking-[0.24em] text-brand-sand">Contacto</p>
-            <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
-              Conversemos sobre su proceso o actividad.
+        <div class="mx-auto max-w-4xl reveal-on-scroll rounded-[2rem] border border-brand-sage/15 bg-white p-8 shadow-soft md:p-10">
+          <div class="border-b border-brand-sage/15 pb-8">
+            <p class="text-sm font-bold uppercase tracking-[0.24em] text-brand-forest">Contacto</p>
+            <h2 class="mt-4 text-3xl font-bold tracking-tight text-brand-deep md:text-4xl">
+              Solicitar información
             </h2>
-            <div class="mt-8 space-y-4 text-base leading-7 text-white/85">
-              <p><strong class="text-white">Línea directa:</strong> +57 319 5175110</p>
-              <p><strong class="text-white">Correo:</strong> rhgavive@gmail.com</p>
+            <p class="mt-4 max-w-2xl text-base leading-7 text-brand-forest/90">
+              Comparte los datos principales de tu solicitud y te llevaremos directamente al canal de contacto.
+            </p>
+            <div class="mt-6 flex flex-col gap-3 text-sm text-brand-forest/90 sm:flex-row sm:gap-8">
+              <p><strong class="text-brand-deep">Línea directa:</strong> +57 319 5175110</p>
+              <p><strong class="text-brand-deep">Correo:</strong> rhgavive@gmail.com</p>
             </div>
-            <button
-              type="button"
-              class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-deep transition duration-300 hover:-translate-y-0.5"
-              @click="openContact()"
-            >
-              Abrir conversación
-            </button>
           </div>
 
-          <form
-            class="reveal-on-scroll rounded-[2rem] border border-brand-sage/15 bg-white p-8 shadow-soft"
-            @submit.prevent="handleSubmit"
-          >
-            <h3 class="text-2xl font-bold text-brand-deep">Solicitar información</h3>
-            <p class="mt-3 text-sm leading-6 text-brand-forest/85">
-              Cuéntanos lo que necesitas y te llevaremos directamente al canal de contacto.
-            </p>
-
-            <div class="mt-8 grid gap-5">
+          <form class="mt-8" @submit.prevent="handleSubmit">
+            <div class="grid gap-5">
               <label class="grid gap-2 text-sm font-medium text-brand-forest">
                 Nombre
                 <input
@@ -336,12 +324,21 @@ onBeforeUnmount(() => {
               </label>
             </div>
 
-            <button
-              type="submit"
-              class="mt-8 inline-flex items-center justify-center rounded-full bg-brand-forest px-6 py-3 text-sm font-semibold text-white shadow-soft transition duration-300 hover:-translate-y-0.5 hover:bg-brand-deep"
-            >
-              Enviar mensaje
-            </button>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-brand-forest px-6 py-3 text-sm font-semibold text-white shadow-soft transition duration-300 hover:-translate-y-0.5 hover:bg-brand-deep"
+              >
+                Enviar mensaje
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-full border border-brand-deep/15 bg-white px-6 py-3 text-sm font-semibold text-brand-deep transition duration-300 hover:-translate-y-0.5 hover:border-brand-sage/60"
+                @click="openContact()"
+              >
+                Abrir conversación
+              </button>
+            </div>
           </form>
         </div>
       </section>
