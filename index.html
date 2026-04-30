@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Operador Logístico Policarpa: suministro de materiales, talento humano y procesos educativos con enfoque de educación popular."
+    />
+    <title>Operador Logístico Policarpa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                deep: '#26413c',
+                forest: '#3c5a4f',
+                sage: '#7c9a92',
+                sand: '#d8c3a5',
+                mist: '#f4f1ec'
+              }
+            },
+            boxShadow: {
+              soft: '0 20px 60px -28px rgba(38, 65, 60, 0.35)'
+            },
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-brand-mist text-brand-deep antialiased">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
